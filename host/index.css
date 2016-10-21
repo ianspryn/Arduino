@@ -1,0 +1,130 @@
+/*
+Created by Ian S
+© Copyright 2015
+*/
+
+  body  {
+      background-color:#eeeeee;
+        }
+
+  h1    {
+        color: #454545;
+        font-family: Julius Sans One;
+        text-align: center;
+        font-size: 45px;
+        padding-top: 20px;
+        }
+    h2 {
+        color: #454545;
+        font-family: Julius Sans One;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 20px;
+    }
+a  {
+        color:#282b2d;
+        text-decoration: none;
+        font-family: Julius Sans One;
+        background-color: #fafafa;
+        border-radius: 5px 5px 5px;
+        padding: 20px 20px;
+        -moz-box-shadow:    0 8px 15px -4px #cccccc;
+        -webkit-box-shadow: 0 8px 15px -4px #cccccc;
+        box-shadow:         0 8px 15px -4px #cccccc;
+        }
+
+        a:link {color: #282b2d;}
+        a:hover {color: #282b2d;}
+        a:visited {color: #282b2d;}
+        a:active {color: #282b2d; background-color: #fafafa;}
+        
+        
+.arduino {  
+            width: 25%;
+            position: absolute;
+            bottom: 50px;
+            left: 0;
+        }
+        
+.hidden {
+    display :none;
+}
+
+.box-container {
+    margin: 45px;
+    text-align: center;
+}
+
+.red {
+    background-color: #F08080;
+}
+
+.orange {
+    background-color: #FFA500;
+}
+
+.lightorange {
+    background-color: #FFA07A;
+}
+
+.yellow {
+    background-color: #FFFF99;
+}
+
+.lime {
+    background-color: #90EE90;
+}
+
+.green {
+    background-color: #3CB371;
+}
+
+
+.cyan {
+    background-color: #E0FFFF;
+}
+
+.blue {
+    background-color: #87CEFA;
+}
+
+.purple {
+    background-color: #9370DB;
+}
+
+.deeppurple {
+    background-color: #9932CC;
+}
+
+.pink {
+    background-color: #FFC0CB;
+}
+
+
+.black {
+    background-color: #484848;
+}
+
+
+
+@media (max-width: 510px) {
+  html { font-size: 13px; }
+  h1 { font-size: 40px; }
+  a { padding: 17px; margin: 15;}
+
+}
+@media (max-width: 399px) {
+  html { font-size: 9px; }
+  h1 { font-size: 35px; }
+  a {margin-top: 40px; padding: 13px;}
+}
+
+@media (max-width: 313px) {
+  html { font-size: 8px; }
+  h1 { font-size: 30px; }
+  a {margin-top: 40px; padding: 11px; }
+}
+
+@media (max-height: 530px) {
+    .arduino { width: 15%; }
+}
