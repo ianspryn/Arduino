@@ -1,0 +1,54 @@
+clint.println("<HTML>");
+clint.println("");
+clint.println("<HEAD>");
+clint.println("<meta name='viewport' content='width=device-width'>");
+clint.println("<meta name='viewport' content='initial-scale=1.0'>");
+clint.println("<link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>");
+clint.println("<link href='https://fonts.googleapis.com/css?family=Raleway:200,400' rel='stylesheet'>");
+clint.println("<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>");
+clint.println("<link rel='stylesheet' type='text/css' href='https://raw.githubusercontent.com/ianspryn/Arduino/master/host/main.css' />");
+clint.println("<script type='text/javascript' src='http://code.jquery.com/jquery-3.1.1.min.js'></script>");
+clint.println("<script type='text/javascript' src='https://raw.githubusercontent.com/ianspryn/Arduino/master/host/click.js'></script>");
+clint.println("<TITLE>Arduino</TITLE>");
+clint.println("</HEAD>");
+
+clint.println("<BODY>");
+clint.println("<H1>Arduino</H1>");
+
+clint.println("<div class='container'>");
+
+clint.println("<div class='cbx-div'>");
+clint.println("<input type='checkbox' name='hall' id='hall' class='cbx hidden'" + ((status[0] == 1 || status[1] == 1) ? " checked" : "") + " />");
+clint.println("<label for='hall' class='lbl hidden-text'></label>");
+clint.println("</div>");
+clint.println("<label for='hall' class='hall-text'>Hall off</label>");
+    
+clint.println("<div class='cbx-div'>");
+clint.println("<input type='checkbox' name='hall-front' id='hall-front' class='cbx hidden'" + (status[0] == 1 ? " checked" : "") + " />");
+clint.println("<label for='hall-front' class='lbl hidden-text'></label>");
+clint.println("</div>");
+clint.println("<label for='hall-front' class='hall-front-text'>Hall Front off</label>");
+
+clint.println("<div class='cbx-div'>");
+clint.println("<input type='checkbox' name='hall-back' id='hall-back' class='cbx hidden'" + (status[1] == 1 ? " checked" : "") + " />");
+clint.println("<label for='hall-back' class='lbl hidden-text'></label>");
+clint.println("</div>");
+clint.println("<label for='hall-back' class='hall-back-text'>Hall Back off</label>");
+
+clint.println("<div class='cbx-div'>");
+clint.println("<input type='checkbox' name='walk' id='walk' class='cbx hidden'" + (status[2] == 1 ? " checked" : "") + " />");
+clint.println("<label for='walk' class='lbl hidden-text'></label>");
+clint.println("</div>");
+clint.println("<label for='walk' class='walk-text'>Walk off</label>");
+
+clint.println("<div class='cbx-div'>");
+clint.println("<input type='checkbox' name='lamp' id='lamp' class='cbx hidden'" + (status[3] == 1 ? " checked" : "") + " />");
+clint.println("<label for='lamp' class='lbl hidden-text'></label>");
+clint.println("</div>");
+clint.println("<label for='lamp' class='lamp-text'>Lamp Post off</label>");
+
+clint.println("</div>");
+
+clint.println("</BODY>");
+
+clint.println("</HTML>");

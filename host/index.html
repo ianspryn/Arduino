@@ -1,43 +1,55 @@
+<!-- Before transferring code to Arduino, change CSS and JS source from file name to Github source link -->
+
 <HTML>
-    <HEAD>
-        <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
-        <link rel='stylesheet' type='text/css' href='main.css' />
-        <script type='text/javascript' src='http://code.jquery.com/jquery-3.1.1.min.js'></script>
-        <script type='text/javascript' src='click.js'></script>
-        <img class='arduino' alt='Arduino image' src='https://lh3.googleusercontent.com/-nHur48Z48Vw/VGlIbTCMILI/AAAAAAAAEvI/7SYpyXFiODE/w554-h577-no/Arduino_background.png'> 
-        <TITLE>Arduino</TITLE>
-    </HEAD>
-    <BODY>
-        <H1>Arduino</H1>
-            <br />
-            <br />
-        <center>
-        <a href="/?hallOn">Turn on Hallway</a>
-        <a href="/?hallOff">Turn off Hallway</a><br />
-            <br />
-            <br />
-            <br />
-        <a href="/?frontOn">Turn on front</a>
-        <a href="/?frontOff">Turn off front</a><br />
-            <br />
-            <br />
-            <br />
-        <a href="/?backOn">Turn on back</a>
-        <a href="/?backOff">Turn off back</a><br />
-            <br />
-            <br />
-            <br />
-            <br />
-        <a href="/?walkOn">Turn on walk</a>
-        <a href="/?walkOff">Turn off walk</a><br />
-            <br />
-            <br />
-            <br />
-            <br />
-        <a href="/?postOn">Turn on lamp post</a>
-        <a href="/?postOff">Turn off lamp post</a><br />
-        </center>
-            <br />
-            <br />
-    </BODY>
+
+<HEAD>
+    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' href='main.css' />
+    <script type='text/javascript' src='http://code.jquery.com/jquery-3.1.1.min.js'></script>
+    <script type='text/javascript' src='click.js'></script>
+    <TITLE>Arduino</TITLE>
+</HEAD>
+
+<BODY>
+    <H1>Arduino</H1>
+
+    <div class="container">
+
+        <div class="cbx-div">
+            <input type="checkbox" name="hall" id="hall" class="cbx hidden" />
+            <label for="hall" class="lbl hidden-text"></label>
+        </div>
+        <label for="hall" class="hall-text">Hall off</label>
+
+        <div class="cbx-div">
+            <input type="checkbox" name="hall-front" id="hall-front" class="cbx hidden" />
+            <label for="hall-front" class="lbl hidden-text"></label>
+        </div>
+        <label for="hall-front" class="hall-front-text">Hall Front off</label>
+
+        <div class="cbx-div">
+            <input type="checkbox" name="hall-back" id="hall-back" class="cbx hidden" />
+            <label for="hall-back" class="lbl hidden-text"></label>
+        </div>
+        <label for="hall-back" class="hall-back-text">Hall Back off</label>
+
+        <div class="cbx-div">
+            <input type="checkbox" name="walk" id="walk" class="cbx hidden" />
+            <label for="walk" class="lbl hidden-text"></label>
+        </div>
+        <label for="walk" class="walk-text">Walk off</label>
+
+        <div class="cbx-div">
+            <input type="checkbox" name="lamp" id="lamp" class="cbx hidden" />
+            <label for="lamp" class="lbl hidden-text"></label>
+        </div>
+        <label for="lamp" class="lamp-text">Lamp Post off</label>
+    </div>
+
+</BODY>
+
 </HTML>
