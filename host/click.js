@@ -20,7 +20,7 @@
                 callBkg("/?hallOn");
             }
         });
-        $('#hall-front').click(function() {
+   /*     $('#hall-front').click(function() {
             var checkbox = $(this);
             var label = $('.hall-front-text');
 
@@ -45,7 +45,7 @@
             } else if (label.text() == "Hall Back on") {
                 callBkg("/?backOn");
             }
-        });
+        }); */
         $('#walk').click(function() {
             var checkbox = $(this);
             var label = $('.walk-text');

@@ -1,0 +1,50 @@
+client.println("<HTML>");
+client.println("<HEAD>");
+client.println("<meta name='viewport' content='width=device-width'>");
+client.println("<meta name='viewport' content='initial-scale=1.0'>");
+client.println("<link rel='stylesheet' type='text/css' href='https://raw.githubusercontent.com/ianspryn/Arduino/master/host/main.css' />");
+client.println("<script type='text/javascript' src='http://code.jquery.com/jquery-3.1.1.min.js'></script>");
+client.println("<script type='text/javascript' src='https://raw.githubusercontent.com/ianspryn/Arduino/master/host/click.js'></script>");
+client.println("<TITLE>Arduino</TITLE>");
+client.println("</HEAD>");
+
+client.println("<BODY>");
+client.println("<H1>Arduino</H1>");
+
+client.println("<div class='container'>");
+
+client.println("<div class='cbx-div'>");
+client.println("<input type='checkbox' name='hall' id='hall' class='cbx hidden'" + ((status[0] == 1 || status[1] == 1) ? " checked" : "") + " />");
+client.println("<label for='hall' class='lbl hidden-text'></label>");
+client.println("</div>");
+client.println("<label for='hall' class='hall-text'>Hall off</label>");
+    
+client.println("<div class='cbx-div'>");
+client.println("<input type='checkbox' name='hall-front' id='hall-front' class='cbx hidden'" + (status[0] == 1 ? " checked" : "") + " />");
+client.println("<label for='hall-front' class='lbl hidden-text'></label>");
+client.println("</div>");
+client.println("<label for='hall-front' class='hall-front-text'>Hall Front off</label>");
+
+client.println("<div class='cbx-div'>");
+client.println("<input type='checkbox' name='hall-back' id='hall-back' class='cbx hidden'" + (status[1] == 1 ? " checked" : "") + " />");
+client.println("<label for='hall-back' class='lbl hidden-text'></label>");
+client.println("</div>");
+client.println("<label for='hall-back' class='hall-back-text'>Hall Back off</label>");
+
+client.println("<div class='cbx-div'>");
+client.println("<input type='checkbox' name='walk' id='walk' class='cbx hidden'" + (status[2] == 1 ? " checked" : "") + " />");
+client.println("<label for='walk' class='lbl hidden-text'></label>");
+client.println("</div>");
+client.println("<label for='walk' class='walk-text'>Walk off</label>");
+
+client.println("<div class='cbx-div'>");
+client.println("<input type='checkbox' name='lamp' id='lamp' class='cbx hidden'" + (status[3] == 1 ? " checked" : "") + " />");
+client.println("<label for='lamp' class='lbl hidden-text'></label>");
+client.println("</div>");
+client.println("<label for='lamp' class='lamp-text'>Lamp Post off</label>");
+
+client.println("</div>");
+
+client.println("</BODY>");
+
+client.println("</HTML>");
